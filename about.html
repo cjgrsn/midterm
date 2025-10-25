@@ -1,43 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About - SmashZone</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-blue-50 font-sans">
-    <header
-      class="bg-blue-700 text-white p-5 flex justify-between items-center shadow-lg"
-    >
-      <h1 class="text-3xl font-bold">🏸 SmashZone</h1>
-      <nav>
-        <ul class="flex gap-6 text-lg">
-          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
-          <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
-          <li>
-            <a href="training.html" class="hover:text-yellow-300">Training</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - SmashZone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-blue-100 font-sans text-gray-800">
 
-    <section class="p-10 max-w-3xl mx-auto text-center">
-      <h2 class="text-4xl font-semibold text-blue-800 mb-5">About SmashZone</h2>
-      <p class="text-lg mb-4">
-        SmashZone is a digital space built for badminton enthusiasts. Our goal
-        is to inspire players to train smarter, improve faster, and enjoy the
-        game more deeply.
-      </p>
-      <ul class="list-disc text-left mx-auto max-w-lg text-blue-900">
-        <li>Founded by passionate athletes.</li>
-        <li>Focuses on practical training drills and strategies.</li>
-        <li>Encourages community growth and player connection.</li>
+  <header class="bg-blue-700 text-white p-5 flex justify-between items-center shadow-lg">
+    <h1 class="text-3xl font-bold">🏸 SmashZone</h1>
+    <nav>
+      <ul class="flex gap-6 text-lg">
+        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+        <li><a href="training.html" class="hover:text-yellow-300">Training</a></li>
       </ul>
-    </section>
+    </nav>
+  </header>
 
-    <footer class="bg-blue-800 text-white text-center p-4 mt-10">
-      <p>&copy; 2025 SmashZone Blog. All Rights Reserved.</p>
-    </footer>
-  </body>
+  <section 
+    class="relative flex justify-center items-center text-center text-white py-24 bg-cover bg-center"
+    style="background-image: url('court.jpg');">
+    <div class="absolute inset-0 bg-blue-900 opacity-70"></div>
+    <div class="relative z-10 max-w-3xl px-6">
+      <h2 class="text-5xl font-extrabold mb-4">About <span class="text-yellow-400">SmashZone</span></h2>
+      <p class="text-lg text-blue-100">
+        Where passion meets precision — your all-in-one badminton training and lifestyle hub.
+      </p>
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto p-10 flex flex-col gap-16">
+
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1">
+        <h3 class="text-3xl font-semibold text-blue-800 mb-4">Our Mission</h3>
+        <p class="text-lg leading-relaxed mb-4">
+          At <strong>SmashZone</strong>, we believe badminton is more than a sport — it’s a lifestyle of discipline, agility, and community. 
+          Our mission is to bring professional techniques, creative drills, and motivational insights to players at every level.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Enhance your gameplay with structured training programs.</li>
+          <li>Learn through visuals, tutorials, and expert advice.</li>
+          <li>Join a supportive global community of badminton lovers.</li>
+        </ul>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <img 
+          src="lee.jpg"
+          alt="Badminton Action"
+          class="rounded-2xl shadow-xl w-full max-w-md hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+    </div>
+
+    <div class="flex flex-col-reverse md:flex-row items-center gap-10">
+      <div class="flex-1 flex justify-center">
+        <img 
+          src="badminton.webp"
+          alt="Community Players"
+          class="rounded-2xl shadow-xl w-full max-w-md hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+      <div class="flex-1">
+        <h3 class="text-3xl font-semibold text-blue-800 mb-4">Our Community</h3>
+        <p class="text-lg leading-relaxed mb-4">
+          SmashZone is powered by players, coaches, and fans who share the same love for the game. 
+          Together, we grow through shared experiences, tournaments, and mutual support.
+        </p>
+        <p class="text-lg leading-relaxed">
+          Whether you’re smashing birdies in local matches or training for regional tournaments, 
+          we’re here to help you push limits, learn, and connect.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center bg-blue-700 text-white py-16 mt-10">
+    <h3 class="text-3xl font-bold mb-4">Be Part of the SmashZone Family!</h3>
+    <p class="mb-6 text-blue-100 text-lg">Subscribe to our training tips and join the movement today.</p>
+    <a href="training.html" 
+       class="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition">
+       Start Training
+    </a>
+  </section>
+
+  <footer class="bg-blue-800 text-white text-center py-6">
+    <p>&copy; 2025 SmashZone Blog. All Rights Reserved.</p>
+  </footer>
+
+</body>
 </html>
