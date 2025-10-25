@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training - SmashZone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function submitForm(event) {
+        event.preventDefault();
+        window.location.href = "thankyou.html";
+      }
+    </script>
+  </head>
+  <body class="bg-blue-50 font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header
+      class="bg-blue-700 text-white p-5 flex justify-between items-center shadow-lg"
+    >
+      <h1 class="text-3xl font-bold">🏸 SmashZone</h1>
+      <nav>
+        <ul class="flex gap-6 text-lg">
+          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+          <li>
+            <a
+              href="training.html"
+              class="hover:text-yellow-300 font-semibold underline"
+              >Training</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Training Section -->
+    <section class="p-10 text-center flex-1">
+      <h2 class="text-4xl font-semibold text-blue-800 mb-8">
+        Training Drills & Tips
+      </h2>
+
+      <!-- Drills Container -->
+      <div class="flex flex-wrap justify-center gap-10">
+        <!-- Shadow Swing -->
+        <div
+          class="flex flex-col items-center border-b-4 border-blue-500 p-6 bg-white rounded-xl shadow-lg w-72 transition-transform hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <h3 class="text-xl font-bold mb-2 text-blue-700">Shadow Swing</h3>
+          <img
+            src="https://badmintonexplored.wordpress.com/wp-content/uploads/2018/11/move-front-right3.gif"
+            alt="Shadow Swing"
+            class="w-60 h-40 object-cover border rounded-xl shadow-md mb-3"
+          />
+          <p class="text-gray-700">
+            Practice your swing without a shuttle to perfect your timing and
+            motion.
+          </p>
+        </div>
+
+        <!-- Footwork -->
+        <div
+          class="flex flex-col items-center border-b-4 border-blue-500 p-6 bg-white rounded-xl shadow-lg w-72 transition-transform hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <h3 class="text-xl font-bold mb-2 text-blue-700">Footwork Drill</h3>
+          <img
+            src="https://i.makeagif.com/media/9-20-2023/H6zoAZ.gif"
+            alt="Footwork Drill"
+            class="w-60 h-40 object-cover border rounded-xl shadow-md mb-3"
+          />
+          <p class="text-gray-700">
+            Improve your movement, balance, and positioning on the court.
+          </p>
+        </div>
+
+        <!-- Target Practice -->
+        <div
+          class="flex flex-col items-center border-b-4 border-blue-500 p-6 bg-white rounded-xl shadow-lg w-72 transition-transform hover:-translate-y-2 hover:shadow-2xl"
+        >
+          <h3 class="text-xl font-bold mb-2 text-blue-700">Target Practice</h3>
+          <img
+            src="https://media.tenor.com/dBdlefyd7loAAAAM/playing-badminton-viktor-axelsen.gif"
+            alt="Target Practice"
+            class="w-60 h-40 object-cover border rounded-xl shadow-md mb-3"
+          />
+          <p class="text-gray-700">
+            Enhance your accuracy by aiming shots at specific targets.
+          </p>
+        </div>
+      </div>
+
+      <!-- Training Tips Table -->
+      <div class="mt-14 max-w-4xl mx-auto">
+        <h3 class="text-2xl font-semibold text-blue-800 mb-6 text-center">
+          📝 Key Training Tips
+        </h3>
+
+        <div class="overflow-x-auto shadow-lg rounded-lg">
+          <table class="min-w-full bg-white border border-blue-300">
+            <thead class="bg-blue-600 text-white">
+              <tr>
+                <th class="py-3 px-4 text-left">#</th>
+                <th class="py-3 px-4 text-left">Training Tip</th>
+                <th class="py-3 px-4 text-left">Purpose / Benefit</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-700">
+              <tr class="border-b hover:bg-blue-50">
+                <td class="py-3 px-4">1</td>
+                <td class="py-3 px-4">Warm up before every session</td>
+                <td class="py-3 px-4">
+                  Prevents injuries and prepares your muscles for play.
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-50">
+                <td class="py-3 px-4">2</td>
+                <td class="py-3 px-4">Focus on consistency before speed</td>
+                <td class="py-3 px-4">
+                  Builds muscle memory and accuracy before power.
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-50">
+                <td class="py-3 px-4">3</td>
+                <td class="py-3 px-4">Record your games</td>
+                <td class="py-3 px-4">
+                  Helps identify mistakes and track performance progress.
+                </td>
+              </tr>
+              <tr class="border-b hover:bg-blue-50">
+                <td class="py-3 px-4">4</td>
+                <td class="py-3 px-4">Combine strength and agility drills</td>
+                <td class="py-3 px-4">
+                  Enhances endurance, reflexes, and body coordination.
+                </td>
+              </tr>
+              <tr class="hover:bg-blue-50">
+                <td class="py-3 px-4">5</td>
+                <td class="py-3 px-4">Cool down and stretch</td>
+                <td class="py-3 px-4">
+                  Aids in recovery and reduces muscle soreness.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Registration Form -->
+    <section
+      class="p-10 bg-white shadow-lg rounded-xl max-w-xl mx-auto mt-10 mb-10"
+    >
+      <h3 class="text-2xl font-semibold text-blue-800 mb-4 text-center">
+        Contact & Registration
+      </h3>
+      <p class="text-gray-600 text-center mb-6">
+        Got questions or want to join our training program? Send us a message
+        below!
+      </p>
+      <form onsubmit="submitForm(event)" class="flex flex-col gap-4">
+        <input
+          type="text"
+          placeholder="Your Name"
+          required
+          class="border p-3 rounded-md focus:ring-2 focus:ring-blue-400 outline-none"
+        />
+        <input
+          type="email"
+          placeholder="Your Email"
+          required
+          class="border p-3 rounded-md focus:ring-2 focus:ring-blue-400 outline-none"
+        />
+        <textarea
+          placeholder="Your Message"
+          required
+          class="border p-3 rounded-md focus:ring-2 focus:ring-blue-400 outline-none"
+        ></textarea>
+        <button
+          type="submit"
+          class="bg-blue-700 text-white py-2 rounded-md hover:bg-blue-800 transition-colors"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <footer class="bg-blue-800 text-white text-center p-4">
+      <p>&copy; 2025 SmashZone Blog. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
